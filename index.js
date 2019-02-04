@@ -1,5 +1,9 @@
 // Варіант 1 Рекурсія
-const num = parseFloat(prompt('Please, enter a number', 1));
+let num = parseFloat(prompt('Please, enter a number', 1));
+while( Number.isNaN(num) ) {
+alert('Please enter a number');
+num = parseFloat(prompt('Please, enter a number', 1));
+}
 
 function fibonacci(num) {
     if (num === 1)
@@ -14,6 +18,10 @@ alert(fibonacci(num));
 
 //Варіант 2 
 const num1 = parseFloat(prompt('Please, enter a number', 1));
+while( Number.isNaN(num1) ) {
+alert('Please enter a number');
+num1 = parseFloat(prompt('Please, enter a number', 1));
+}
 
 function fibonacci1(num1) {
     let a = 0
@@ -37,7 +45,11 @@ function fibonacci1(num1) {
 alert(fibonacci1(num1));
 
 //Варіант 3
-const num2 = parseFloat(prompt('Please, enter a number', 1));
+let num2 = parseFloat(prompt('Please, enter a number', 1));
+while( Number.isNaN(num2) ) {
+alert('Please enter a number');
+num2 = parseFloat(prompt('Please, enter a number', 1));
+}
 
 function fibonacci2(num2) {
     let arr = [1, 1];
